@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:"Open Sans Condensed", sans-serif; ;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.7;
+    background-color:#fff;
+   
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
