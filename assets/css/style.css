@@ -1,75 +1,3 @@
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4taVIGxA.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
-
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4kaVIGxA.woff2) format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4saVIGxA.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF; }
-
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4jaVIGxA.woff2) format("woff2");
-  unicode-range: U+0370-03FF; }
-
-/* hebrew */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4iaVIGxA.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
-
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4vaVIGxA.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB; }
-
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVIGxA.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVI.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
 *,
 *::after,
 *::before {
@@ -78,11 +6,13 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #666666;
-  line-height: 1.7;
-  background-color: #fff; }
+  background-color: #fff;
+  height: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px; }
 
 ul {
   list-style-type: none; }
@@ -90,3 +20,115 @@ ul {
 a {
   text-decoration: none;
   color: #fff; }
+
+header .header-top {
+  padding: 8px 40px 16px;
+  align-items: center; }
+  header .header-top .logo {
+    width: 50%; }
+  header .header-top .header-right {
+    display: flex;
+    justify-content: end; }
+    header .header-top .header-right a {
+      color: #000000;
+      font-size: 22px;
+      line-height: 24px;
+      font-weight: 700; }
+    header .header-top .header-right .sign {
+      padding-right: 26px; }
+    header .header-top .header-right .basket i {
+      position: relative;
+      font-size: 23px; }
+      header .header-top .header-right .basket i .basket-count {
+        position: absolute;
+        top: -10px;
+        right: -18px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        background: #ad0f14;
+        color: #ffffff;
+        font-family: "Helvetica Neue DeskInterface", sans-serif;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: center;
+        z-index: 2;
+        font-weight: 400; }
+    header .header-top .header-right .basket .basket-price {
+      font-size: 16px; }
+
+header .header-bottom {
+  background: #ad0f14;
+  padding: 26px 0;
+  margin-bottom: 25px; }
+  header .header-bottom ul {
+    text-align: center; }
+    header .header-bottom ul li {
+      display: inline-block;
+      margin-right: 22px; }
+      header .header-bottom ul li a {
+        font-size: 24px;
+        font-family: "Open Sans Condensed", Arial, sans-serif;
+        line-height: 26px;
+        font-weight: 700;
+        color: #ffffff;
+        transition: all, 0.3s; }
+        header .header-bottom ul li a:hover {
+          opacity: 0.5; }
+
+.slider {
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 25px; }
+  .slider .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: #f1f1f1;
+    border: 1px solid #0f9675;
+    border-radius: 50%;
+    opacity: 1; }
+    .slider .carousel-indicators button.active {
+      background-color: #0f9675; }
+
+footer {
+  background: #AD0F14;
+  padding: 30px 30px 20px;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px; }
+  footer .copy {
+    font-size: 14px; }
+  footer .footer-list {
+    display: flex;
+    justify-content: space-between; }
+    footer .footer-list li a {
+      font-size: 16px;
+      font-family: "Open Sans Condensed", Arial, sans-serif;
+      line-height: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      transition: all, 0.3s; }
+      footer .footer-list li a:hover {
+        color: #fff;
+        opacity: 0.5; }
+  footer .footer-img {
+    position: relative; }
+    footer .footer-img img {
+      position: absolute;
+      top: -16px; }
+  footer .social {
+    display: flex;
+    justify-content: space-between; }
+    footer .social li {
+      display: inline-block;
+      margin-right: 10px; }
+      footer .social li a {
+        font-size: 22px;
+        transition: all, 0.3s; }
+        footer .social li a:hover {
+          color: #fff;
+          opacity: 0.5; }
