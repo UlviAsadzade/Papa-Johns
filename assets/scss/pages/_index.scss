@@ -1,4 +1,5 @@
 header {
+    overflow-x: hidden;
     .header-top {
         padding: 8px 40px 16px;
         align-items: center;
@@ -17,6 +18,84 @@ header {
             }
             .sign {
                 padding-right: 26px;
+                .account{
+                    .select-menu {
+                      }
+                      .select-menu .select-btn {
+                        cursor: pointer;
+                      }
+                      .select-menu .options {
+                        position: absolute;
+                        min-width: 200px;
+                        padding: 10px;
+                        margin-top: 10px;
+                        border-radius: 8px;
+                        background: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        animation-name: fadeInDown;
+                        -webkit-animation-name: fadeInDown;
+                        animation-duration: 0.35s;
+                        animation-fill-mode: both;
+                        -webkit-animation-duration: 0.35s;
+                        -webkit-animation-fill-mode: both;
+                      }
+                      .select-menu .options .option {
+                        display: flex;
+                        height: 55px;
+                        cursor: pointer;
+                        padding: 0 16px;
+                        border-radius: 8px;
+                        align-items: center;
+                        background: #fff;
+                      }
+                      .select-menu .options .option:hover {
+                        background: #f2f2f2;
+                      }
+                      .select-menu .options .option i {
+                        margin-right: 12px;
+                      }
+                      .select-menu .options .option .option-text {
+                        font-size: 20px;
+                      }
+                      
+                      .select-btn i {
+                        transition: 0.3s;
+                      }
+                      
+                      .select-menu.active .select-btn .fa-caret-down {
+                        transform: rotate(-180deg);
+                      }
+                      .select-menu.active .options {
+                        display: block;
+                        z-index: 10;
+                        animation-name: fadeInUp;
+                        -webkit-animation-name: fadeInUp;
+                        animation-duration: 0.4s;
+                        animation-fill-mode: both;
+                        -webkit-animation-duration: 0.4s;
+                        -webkit-animation-fill-mode: both;
+                      }
+                      
+                      @keyframes fadeInUp {
+                        from {
+                          transform: translate3d(0, 30px, 0);
+                        }
+                        to {
+                          transform: translate3d(0, 0, 0);
+                          opacity: 1;
+                        }
+                      }
+                      @keyframes fadeInDown {
+                        from {
+                          transform: translate3d(0, 0, 0);
+                          opacity: 1;
+                        }
+                        to {
+                          transform: translate3d(0, 20px, 0);
+                          opacity: 0;
+                        }
+                      }
+                }
             }
             .basket {
                 i {
@@ -52,13 +131,12 @@ header {
         padding: 26px 0;
         margin-bottom: 25px;
         ul {
-            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
             li {
-                display: inline-block;
-                margin-right: 22px;
+                
                 a {
                     font-size: 24px;
-                    font-family: "Open Sans Condensed", Arial, sans-serif;
                     line-height: 26px;
                     font-weight: 700;
                     color: #ffffff;
@@ -77,6 +155,7 @@ header {
     max-width: 95%;
     margin: 0 auto;
     margin-bottom: 25px;
+    overflow-x: hidden;
     .carousel-indicators {
         button {
             width: 12px;
@@ -97,21 +176,14 @@ header {
 footer{
     background: #AD0F14;
     padding: 30px 30px 20px;
-    color: #fff;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-    .copy{
-        font-size: 14px;
-    }
     .footer-list{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        padding: 0;
         li{
             a {
                 font-size: 16px;
-                font-family: "Open Sans Condensed", Arial, sans-serif;
+                font-family: "Open Sans", Arial, sans-serif;
                 line-height: 20px;
                 font-weight: 700;
                 color: #ffffff;
@@ -130,6 +202,7 @@ footer{
         img{
             position: absolute;
             top: -16px;
+            width: 100%;
         }
     }
 

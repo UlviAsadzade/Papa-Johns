@@ -21,55 +21,111 @@ a {
   text-decoration: none;
   color: #fff; }
 
-header .header-top {
-  padding: 8px 40px 16px;
-  align-items: center; }
-  header .header-top .logo {
-    width: 50%; }
-  header .header-top .header-right {
-    display: flex;
-    justify-content: end; }
-    header .header-top .header-right a {
-      color: #000000;
-      font-size: 22px;
-      line-height: 24px;
-      font-weight: 700; }
-    header .header-top .header-right .sign {
-      padding-right: 26px; }
-    header .header-top .header-right .basket i {
-      position: relative;
-      font-size: 23px; }
-      header .header-top .header-right .basket i .basket-count {
-        position: absolute;
-        top: -10px;
-        right: -18px;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: 2px solid #ffffff;
-        background: #ad0f14;
-        color: #ffffff;
-        font-family: "Helvetica Neue DeskInterface", sans-serif;
-        font-size: 12px;
-        line-height: 21px;
-        text-align: center;
-        z-index: 2;
-        font-weight: 400; }
-    header .header-top .header-right .basket .basket-price {
-      font-size: 16px; }
+header {
+  overflow-x: hidden; }
+  header .header-top {
+    padding: 8px 40px 16px;
+    align-items: center; }
+    header .header-top .logo {
+      width: 50%; }
+    header .header-top .header-right {
+      display: flex;
+      justify-content: end; }
+      header .header-top .header-right a {
+        color: #000000;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700; }
+      header .header-top .header-right .sign {
+        padding-right: 26px; }
+        header .header-top .header-right .sign .account .select-menu .select-btn {
+          cursor: pointer; }
+        header .header-top .header-right .sign .account .select-menu .options {
+          position: absolute;
+          min-width: 200px;
+          padding: 10px;
+          margin-top: 10px;
+          border-radius: 8px;
+          background: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          animation-name: fadeInDown;
+          -webkit-animation-name: fadeInDown;
+          animation-duration: 0.35s;
+          animation-fill-mode: both;
+          -webkit-animation-duration: 0.35s;
+          -webkit-animation-fill-mode: both; }
+        header .header-top .header-right .sign .account .select-menu .options .option {
+          display: flex;
+          height: 55px;
+          cursor: pointer;
+          padding: 0 16px;
+          border-radius: 8px;
+          align-items: center;
+          background: #fff; }
+        header .header-top .header-right .sign .account .select-menu .options .option:hover {
+          background: #f2f2f2; }
+        header .header-top .header-right .sign .account .select-menu .options .option i {
+          margin-right: 12px; }
+        header .header-top .header-right .sign .account .select-menu .options .option .option-text {
+          font-size: 20px; }
+        header .header-top .header-right .sign .account .select-btn i {
+          transition: 0.3s; }
+        header .header-top .header-right .sign .account .select-menu.active .select-btn .fa-caret-down {
+          transform: rotate(-180deg); }
+        header .header-top .header-right .sign .account .select-menu.active .options {
+          display: block;
+          z-index: 10;
+          animation-name: fadeInUp;
+          -webkit-animation-name: fadeInUp;
+          animation-duration: 0.4s;
+          animation-fill-mode: both;
+          -webkit-animation-duration: 0.4s;
+          -webkit-animation-fill-mode: both; }
 
-header .header-bottom {
-  background: #ad0f14;
-  padding: 26px 0;
-  margin-bottom: 25px; }
-  header .header-bottom ul {
-    text-align: center; }
-    header .header-bottom ul li {
-      display: inline-block;
-      margin-right: 22px; }
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0; } }
+      header .header-top .header-right .basket i {
+        position: relative;
+        font-size: 23px; }
+        header .header-top .header-right .basket i .basket-count {
+          position: absolute;
+          top: -10px;
+          right: -18px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          background: #ad0f14;
+          color: #ffffff;
+          font-family: "Helvetica Neue DeskInterface", sans-serif;
+          font-size: 12px;
+          line-height: 21px;
+          text-align: center;
+          z-index: 2;
+          font-weight: 400; }
+      header .header-top .header-right .basket .basket-price {
+        font-size: 16px; }
+  header .header-bottom {
+    background: #ad0f14;
+    padding: 26px 0;
+    margin-bottom: 25px; }
+    header .header-bottom ul {
+      display: flex;
+      justify-content: space-evenly; }
       header .header-bottom ul li a {
         font-size: 24px;
-        font-family: "Open Sans Condensed", Arial, sans-serif;
         line-height: 26px;
         font-weight: 700;
         color: #ffffff;
@@ -80,7 +136,8 @@ header .header-bottom {
 .slider {
   max-width: 95%;
   margin: 0 auto;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  overflow-x: hidden; }
   .slider .carousel-indicators button {
     width: 12px;
     height: 12px;
@@ -94,20 +151,14 @@ header .header-bottom {
 
 footer {
   background: #AD0F14;
-  padding: 30px 30px 20px;
-  color: #fff;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px; }
-  footer .copy {
-    font-size: 14px; }
+  padding: 30px 30px 20px; }
   footer .footer-list {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-evenly;
+    padding: 0; }
     footer .footer-list li a {
       font-size: 16px;
-      font-family: "Open Sans Condensed", Arial, sans-serif;
+      font-family: "Open Sans", Arial, sans-serif;
       line-height: 20px;
       font-weight: 700;
       color: #ffffff;
@@ -119,7 +170,8 @@ footer {
     position: relative; }
     footer .footer-img img {
       position: absolute;
-      top: -16px; }
+      top: -16px;
+      width: 100%; }
   footer .social {
     display: flex;
     justify-content: space-between; }
