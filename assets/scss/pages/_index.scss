@@ -3,6 +3,12 @@ header {
   .header-top {
     padding: 8px 40px 16px;
     align-items: center;
+    @media only screen and (max-width: 576px) {
+      &{
+        padding: 8px 20px 16px;
+
+      }
+    }
     .logo {
       width: 50%;
       @media only screen and (max-width: 768px) {
@@ -49,8 +55,6 @@ header {
             }
             a{
               color: #fff;
-             
-              
             }
           }
         }
@@ -223,6 +227,12 @@ header {
   margin: 0 auto;
   margin-bottom: 25px;
   overflow-x: hidden;
+  @media only screen and (max-width: 576px) {
+    &{
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+  }
   .carousel-indicators {
     button {
       width: 12px;
@@ -243,11 +253,44 @@ header {
 footer {
   background: #ad0f14;
   padding: 30px 30px 20px;
+  @media only screen and (max-width: 992px) {
+    &{
+      padding: 20px 10px 0px;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    &{
+      padding: 5px 10px 0px;
+    }
+  }
   .footer-list {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
+    @media only screen and (max-width: 992px) {
+      &{
+        justify-content: space-around;
+        margin-bottom: 40px;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      &{
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    
     li {
+      @media only screen and (max-width: 576px) {
+        &{
+          display: inline-block;
+          width: 32%;
+          margin-bottom: 10px;
+          &:last-child{
+            width: 60%;
+          }
+        }
+      }
       a {
         font-size: 16px;
         font-family: "Open Sans", Arial, sans-serif;
@@ -255,6 +298,18 @@ footer {
         font-weight: 700;
         color: #ffffff;
         transition: all, 0.3s;
+        @media only screen and (max-width: 992px) {
+          &{
+            font-size: 20px;
+
+          }
+        }
+        @media only screen and (max-width: 576px) {
+          &{
+            font-size: 14px;
+
+          }
+        }
 
         &:hover {
           color: #fff;
@@ -270,12 +325,36 @@ footer {
       position: absolute;
       top: -16px;
       width: 100%;
+      @media only screen and (max-width: 992px) {
+        &{
+          position: relative;
+          padding-left: 35px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        &{
+          position: relative;
+          padding-left: 16px;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        &{
+          padding-left: 5px;
+          top: 0;
+        }
+      }
     }
   }
 
   .social {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 992px) {
+      &{
+        justify-content: space-evenly;
+
+      }
+    }
     li {
       display: inline-block;
       margin-right: 10px;
