@@ -1,226 +1,293 @@
 header {
-    overflow-x: hidden;
-    .header-top {
-        padding: 8px 40px 16px;
+  overflow-x: hidden;
+  .header-top {
+    padding: 8px 40px 16px;
+    align-items: center;
+    .logo {
+      width: 50%;
+      @media only screen and (max-width: 768px) {
+        &{
+          width: 75%;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        &{
+          width: 100%;
+        }
+      }
+    
+    }
+
+    .header-right {
+      display: flex;
+      justify-content: end;
+      & a {
+        color: #000000;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+      }
+
+      .sign{
+        color: #000000;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+        .mobile-menu-tab-items{
+          margin-top: 30px;
+          .mobile-menu-tab-body{
+            background-color: #960000;
+            .option{
+              background-color: #960000;
+              transition: .3s;
+              &:hover{
+                background-color: #960000;
+                opacity: .5;
+
+              }
+
+            }
+            a{
+              color: #fff;
+             
+              
+            }
+          }
+        }
+        
+      }
+
+      
+      .select-menu .select-btn {
+        cursor: pointer;
+      }
+      .select-menu .options {
+        position: absolute;
+        min-width: 200px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation-name: fadeInDown;
+        -webkit-animation-name: fadeInDown;
+        animation-duration: 0.35s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.35s;
+        -webkit-animation-fill-mode: both;
+       
+      }
+      .select-menu .options .option {
+        display: flex;
+        height: 55px;
+        cursor: pointer;
+        padding: 0 16px;
+        border-radius: 8px;
         align-items: center;
-        .logo {
-            width: 50%;
+        background: #fff;
+      }
+      .select-menu .options .option:hover {
+        background: #f2f2f2;
+      }
+      .select-menu .options .option i {
+        margin-right: 12px;
+      }
+      .select-menu .options .option .option-text {
+        font-size: 20px;
+      }
+
+      .select-btn i {
+        transition: 0.3s;
+      }
+
+      .select-menu.active .select-btn .fa-caret-down {
+        transform: rotate(-180deg);
+      }
+      .select-menu.active .options {
+        display: block;
+        z-index: 10;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          transform: translate3d(0, 30px, 0);
         }
-        .header-right {
-            display: flex;
+        to {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeInDown {
+        from {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+        to {
+          transform: translate3d(0, 20px, 0);
+          opacity: 0;
+        }
+      }
+     
+
+      .mobile-menu {
+        .hamburger-menu {
+          font-size: 40px;
+          color: #0f9675;
+          cursor: pointer;
+        }
+        .offcanvas{
+          overflow-y: scroll;
+          height: 100vh;
+          .offcanvas-header {
             justify-content: end;
-
-            & a {
-                color: #000000;
-                font-size: 22px;
-                line-height: 24px;
-                font-weight: 700;
+            background-color: #960000;
+            .btn-close {
+              filter: invert(1);
+              opacity: 1;
+              &:focus {
+                box-shadow: none;
+              }
             }
-            .sign {
-                padding-right: 26px;
-                .account{
-                    .select-menu {
-                      }
-                      .select-menu .select-btn {
-                        cursor: pointer;
-                      }
-                      .select-menu .options {
-                        position: absolute;
-                        min-width: 200px;
-                        padding: 10px;
-                        margin-top: 10px;
-                        border-radius: 8px;
-                        background: #fff;
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                        animation-name: fadeInDown;
-                        -webkit-animation-name: fadeInDown;
-                        animation-duration: 0.35s;
-                        animation-fill-mode: both;
-                        -webkit-animation-duration: 0.35s;
-                        -webkit-animation-fill-mode: both;
-                      }
-                      .select-menu .options .option {
-                        display: flex;
-                        height: 55px;
-                        cursor: pointer;
-                        padding: 0 16px;
-                        border-radius: 8px;
-                        align-items: center;
-                        background: #fff;
-                      }
-                      .select-menu .options .option:hover {
-                        background: #f2f2f2;
-                      }
-                      .select-menu .options .option i {
-                        margin-right: 12px;
-                      }
-                      .select-menu .options .option .option-text {
-                        font-size: 20px;
-                      }
-                      
-                      .select-btn i {
-                        transition: 0.3s;
-                      }
-                      
-                      .select-menu.active .select-btn .fa-caret-down {
-                        transform: rotate(-180deg);
-                      }
-                      .select-menu.active .options {
-                        display: block;
-                        z-index: 10;
-                        animation-name: fadeInUp;
-                        -webkit-animation-name: fadeInUp;
-                        animation-duration: 0.4s;
-                        animation-fill-mode: both;
-                        -webkit-animation-duration: 0.4s;
-                        -webkit-animation-fill-mode: both;
-                      }
-                      
-                      @keyframes fadeInUp {
-                        from {
-                          transform: translate3d(0, 30px, 0);
-                        }
-                        to {
-                          transform: translate3d(0, 0, 0);
-                          opacity: 1;
-                        }
-                      }
-                      @keyframes fadeInDown {
-                        from {
-                          transform: translate3d(0, 0, 0);
-                          opacity: 1;
-                        }
-                        to {
-                          transform: translate3d(0, 20px, 0);
-                          opacity: 0;
-                        }
-                      }
-                }
-            }
-            .basket {
-                i {
-                    position: relative;
-                    font-size: 23px;
-
-                    .basket-count {
-                        position: absolute;
-                        top: -10px;
-                        right: -18px;
-                        width: 24px;
-                        height: 24px;
-                        border-radius: 50%;
-                        border: 2px solid #ffffff;
-                        background: #ad0f14;
-                        color: #ffffff;
-                        font-family: "Helvetica Neue DeskInterface", sans-serif;
-                        font-size: 12px;
-                        line-height: 21px;
-                        text-align: center;
-                        z-index: 2;
-                        font-weight: 400;
-                    }
-                }
-                .basket-price {
-                    font-size: 16px;
-                }
-            }
+          }
         }
-    }
-    .header-bottom {
-        background: #ad0f14;
-        padding: 26px 0;
-        margin-bottom: 25px;
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-            li {
-                
-                a {
-                    font-size: 24px;
-                    line-height: 26px;
-                    font-weight: 700;
-                    color: #ffffff;
-                    transition: all, 0.3s;
+        
+        
+      }
 
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                }
-            }
+      .basket {
+        margin-right: 30px;
+        i {
+          position: relative;
+          font-size: 23px;
+
+          .basket-count {
+            position: absolute;
+            top: -10px;
+            right: -18px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            background: #ad0f14;
+            color: #ffffff;
+            font-family: "Helvetica Neue DeskInterface", sans-serif;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: center;
+            z-index: 2;
+            font-weight: 400;
+          }
         }
+        .basket-price {
+          font-size: 16px;
+        }
+      }
     }
+  }
+  .header-bottom {
+    background: #ad0f14;
+    padding: 26px 0;
+    margin-bottom: 25px;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        a {
+          font-size: 24px;
+          line-height: 26px;
+          font-weight: 700;
+          color: #ffffff;
+          transition: all, 0.3s;
+          &:hover {
+            opacity: 0.5;
+          }
+          @media only screen and (max-width: 992px) {
+            &{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .slider {
-    max-width: 95%;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    overflow-x: hidden;
-    .carousel-indicators {
-        button {
-            width: 12px;
-            height: 12px;
-            margin: 0 4px;
-            background: #f1f1f1;
-            border: 1px solid #0f9675;
-            border-radius: 50%;
-            opacity: 1;
-            
-            &.active{
-                background-color: #0f9675;
-            }
-        }
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  overflow-x: hidden;
+  .carousel-indicators {
+    button {
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+      background: #f1f1f1;
+      border: 1px solid #0f9675;
+      border-radius: 50%;
+      opacity: 1;
+
+      &.active {
+        background-color: #0f9675;
+      }
     }
+  }
 }
 
-footer{
-    background: #AD0F14;
-    padding: 30px 30px 20px;
-    .footer-list{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0;
-        li{
-            a {
-                font-size: 16px;
-                font-family: "Open Sans", Arial, sans-serif;
-                line-height: 20px;
-                font-weight: 700;
-                color: #ffffff;
-                transition: all, 0.3s;
+footer {
+  background: #ad0f14;
+  padding: 30px 30px 20px;
+  .footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    li {
+      a {
+        font-size: 16px;
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        transition: all, 0.3s;
 
-                &:hover {
-                    color: #fff;
-                    opacity: 0.5;
-                }
-            }
+        &:hover {
+          color: #fff;
+          opacity: 0.5;
         }
+      }
     }
+  }
 
-    .footer-img{
-        position: relative;
-        img{
-            position: absolute;
-            top: -16px;
-            width: 100%;
+  .footer-img {
+    position: relative;
+    img {
+      position: absolute;
+      top: -16px;
+      width: 100%;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      a {
+        font-size: 22px;
+        transition: all, 0.3s;
+
+        &:hover {
+          color: #fff;
+          opacity: 0.5;
         }
+      }
     }
-
-    .social{
-        display: flex;
-        justify-content: space-between;
-        li{
-            display: inline-block;
-            margin-right: 10px;
-            a {
-                font-size: 22px;
-                transition: all, 0.3s;
-
-                &:hover {
-                    color: #fff;
-                    opacity: 0.5;
-                }
-            }
-        }
-    }
+  }
 }

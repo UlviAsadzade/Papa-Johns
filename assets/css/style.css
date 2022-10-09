@@ -28,6 +28,12 @@ header {
     align-items: center; }
     header .header-top .logo {
       width: 50%; }
+      @media only screen and (max-width: 768px) {
+        header .header-top .logo {
+          width: 75%; } }
+      @media only screen and (max-width: 576px) {
+        header .header-top .logo {
+          width: 100%; } }
     header .header-top .header-right {
       display: flex;
       justify-content: end; }
@@ -37,50 +43,65 @@ header {
         line-height: 24px;
         font-weight: 700; }
       header .header-top .header-right .sign {
-        padding-right: 26px; }
-        header .header-top .header-right .sign .account .select-menu .select-btn {
-          cursor: pointer; }
-        header .header-top .header-right .sign .account .select-menu .options {
-          position: absolute;
-          min-width: 200px;
-          padding: 10px;
-          margin-top: 10px;
-          border-radius: 8px;
-          background: #fff;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          animation-name: fadeInDown;
-          -webkit-animation-name: fadeInDown;
-          animation-duration: 0.35s;
-          animation-fill-mode: both;
-          -webkit-animation-duration: 0.35s;
-          -webkit-animation-fill-mode: both; }
-        header .header-top .header-right .sign .account .select-menu .options .option {
-          display: flex;
-          height: 55px;
-          cursor: pointer;
-          padding: 0 16px;
-          border-radius: 8px;
-          align-items: center;
-          background: #fff; }
-        header .header-top .header-right .sign .account .select-menu .options .option:hover {
-          background: #f2f2f2; }
-        header .header-top .header-right .sign .account .select-menu .options .option i {
-          margin-right: 12px; }
-        header .header-top .header-right .sign .account .select-menu .options .option .option-text {
-          font-size: 20px; }
-        header .header-top .header-right .sign .account .select-btn i {
-          transition: 0.3s; }
-        header .header-top .header-right .sign .account .select-menu.active .select-btn .fa-caret-down {
-          transform: rotate(-180deg); }
-        header .header-top .header-right .sign .account .select-menu.active .options {
-          display: block;
-          z-index: 10;
-          animation-name: fadeInUp;
-          -webkit-animation-name: fadeInUp;
-          animation-duration: 0.4s;
-          animation-fill-mode: both;
-          -webkit-animation-duration: 0.4s;
-          -webkit-animation-fill-mode: both; }
+        color: #000000;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700; }
+        header .header-top .header-right .sign .mobile-menu-tab-items {
+          margin-top: 30px; }
+          header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body {
+            background-color: #960000; }
+            header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body .option {
+              background-color: #960000;
+              transition: .3s; }
+              header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body .option:hover {
+                background-color: #960000;
+                opacity: .5; }
+            header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
+              color: #fff; }
+      header .header-top .header-right .select-menu .select-btn {
+        cursor: pointer; }
+      header .header-top .header-right .select-menu .options {
+        position: absolute;
+        min-width: 200px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation-name: fadeInDown;
+        -webkit-animation-name: fadeInDown;
+        animation-duration: 0.35s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.35s;
+        -webkit-animation-fill-mode: both; }
+      header .header-top .header-right .select-menu .options .option {
+        display: flex;
+        height: 55px;
+        cursor: pointer;
+        padding: 0 16px;
+        border-radius: 8px;
+        align-items: center;
+        background: #fff; }
+      header .header-top .header-right .select-menu .options .option:hover {
+        background: #f2f2f2; }
+      header .header-top .header-right .select-menu .options .option i {
+        margin-right: 12px; }
+      header .header-top .header-right .select-menu .options .option .option-text {
+        font-size: 20px; }
+      header .header-top .header-right .select-btn i {
+        transition: 0.3s; }
+      header .header-top .header-right .select-menu.active .select-btn .fa-caret-down {
+        transform: rotate(-180deg); }
+      header .header-top .header-right .select-menu.active .options {
+        display: block;
+        z-index: 10;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both; }
 
 @keyframes fadeInUp {
   from {
@@ -96,27 +117,44 @@ header {
   to {
     transform: translate3d(0, 20px, 0);
     opacity: 0; } }
-      header .header-top .header-right .basket i {
-        position: relative;
-        font-size: 23px; }
-        header .header-top .header-right .basket i .basket-count {
-          position: absolute;
-          top: -10px;
-          right: -18px;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          border: 2px solid #ffffff;
-          background: #ad0f14;
-          color: #ffffff;
-          font-family: "Helvetica Neue DeskInterface", sans-serif;
-          font-size: 12px;
-          line-height: 21px;
-          text-align: center;
-          z-index: 2;
-          font-weight: 400; }
-      header .header-top .header-right .basket .basket-price {
-        font-size: 16px; }
+      header .header-top .header-right .mobile-menu .hamburger-menu {
+        font-size: 40px;
+        color: #0f9675;
+        cursor: pointer; }
+      header .header-top .header-right .mobile-menu .offcanvas {
+        overflow-y: scroll;
+        height: 100vh; }
+        header .header-top .header-right .mobile-menu .offcanvas .offcanvas-header {
+          justify-content: end;
+          background-color: #960000; }
+          header .header-top .header-right .mobile-menu .offcanvas .offcanvas-header .btn-close {
+            filter: invert(1);
+            opacity: 1; }
+            header .header-top .header-right .mobile-menu .offcanvas .offcanvas-header .btn-close:focus {
+              box-shadow: none; }
+      header .header-top .header-right .basket {
+        margin-right: 30px; }
+        header .header-top .header-right .basket i {
+          position: relative;
+          font-size: 23px; }
+          header .header-top .header-right .basket i .basket-count {
+            position: absolute;
+            top: -10px;
+            right: -18px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            background: #ad0f14;
+            color: #ffffff;
+            font-family: "Helvetica Neue DeskInterface", sans-serif;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: center;
+            z-index: 2;
+            font-weight: 400; }
+        header .header-top .header-right .basket .basket-price {
+          font-size: 16px; }
   header .header-bottom {
     background: #ad0f14;
     padding: 26px 0;
@@ -132,6 +170,9 @@ header {
         transition: all, 0.3s; }
         header .header-bottom ul li a:hover {
           opacity: 0.5; }
+        @media only screen and (max-width: 992px) {
+          header .header-bottom ul li a {
+            font-size: 20px; } }
 
 .slider {
   max-width: 95%;
@@ -150,7 +191,7 @@ header {
       background-color: #0f9675; }
 
 footer {
-  background: #AD0F14;
+  background: #ad0f14;
   padding: 30px 30px 20px; }
   footer .footer-list {
     display: flex;
