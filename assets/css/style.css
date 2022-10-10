@@ -274,3 +274,88 @@ footer {
         footer .social li a:hover {
           color: #fff;
           opacity: 0.5; }
+
+.modal {
+  text-align: center;
+  color: #000 !important; }
+  .modal .modal-content {
+    border-radius: 25px !important; }
+    .modal .modal-content .modal-header {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+      border-bottom: 0; }
+      .modal .modal-content .modal-header h5 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-transform: capitalize;
+        margin-left: 180px; }
+        .modal .modal-content .modal-header h5.create-account {
+          margin-left: 115px; }
+    .modal .modal-content .modal-body {
+      padding: 20px 20%; }
+      .modal .modal-content .modal-body form .form-imput-item {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        border-bottom: 1px solid #000 !important; }
+        .modal .modal-content .modal-body form .form-imput-item input {
+          border: none;
+          outline: none; }
+      .modal .modal-content .modal-body form .form-remember-me {
+        text-align: left;
+        margin-bottom: 20px; }
+        .modal .modal-content .modal-body form .form-remember-me label {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          font-size: 15px; }
+          .modal .modal-content .modal-body form .form-remember-me label input {
+            min-width: 16px;
+            height: 16px;
+            margin: -3px 10px 0 0 !important;
+            cursor: pointer; }
+      .modal .modal-content .modal-body form button {
+        font-weight: 600;
+        border-radius: 30px;
+        background-color: #0f9675;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        line-height: 1;
+        padding: 16px;
+        border: 0;
+        letter-spacing: 0.1em;
+        transition: 0.3s all; }
+        .modal .modal-content .modal-body form button:hover {
+          background-color: #000; }
+      .modal .modal-content .modal-body form .forgot-password {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        color: #000; }
+    .modal .modal-content .modal-footer {
+      border: none;
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px; }
+      .modal .modal-content .modal-footer p {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 18px; }
+      .modal .modal-content .modal-footer a {
+        border-radius: 30px;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #ad0f14;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        border: 0;
+        padding: 12px 30px;
+        text-align: center;
+        transition: 0.3s all;
+        cursor: pointer; }
+        .modal .modal-content .modal-footer a:hover {
+          background-color: #000; }
