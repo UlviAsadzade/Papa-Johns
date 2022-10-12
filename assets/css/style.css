@@ -56,10 +56,10 @@ header {
             background-color: #960000; }
             header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body .option {
               background-color: #960000;
-              transition: .3s; }
+              transition: 0.3s; }
               header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body .option:hover {
                 background-color: #960000;
-                opacity: .5; }
+                opacity: 0.5; }
             header .header-top .header-right .sign .mobile-menu-tab-items .mobile-menu-tab-body a {
               color: #fff; }
       header .header-top .header-right .select-menu .select-btn {
@@ -136,7 +136,8 @@ header {
             header .header-top .header-right .mobile-menu .offcanvas .offcanvas-header .btn-close:focus {
               box-shadow: none; }
       header .header-top .header-right .basket {
-        margin-right: 30px; }
+        margin-right: 30px;
+        text-align: center; }
         header .header-top .header-right .basket i {
           position: relative;
           font-size: 23px; }
@@ -275,48 +276,56 @@ footer {
           color: #fff;
           opacity: 0.5; }
 
-.modal {
+.modal.account-modal {
   text-align: center;
   color: #000 !important; }
-  .modal .modal-content {
+  .modal.account-modal .modal-content {
     border-radius: 25px !important; }
-    .modal .modal-content .modal-header {
+    .modal.account-modal .modal-content .modal-header {
       padding-top: 30px !important;
       padding-bottom: 30px !important;
       border-bottom: 0; }
-      .modal .modal-content .modal-header h5 {
+      .modal.account-modal .modal-content .modal-header h5 {
         font-size: 26px;
         font-weight: 600;
         line-height: 1.2;
         text-transform: capitalize;
         margin-left: 180px; }
-        .modal .modal-content .modal-header h5.create-account {
+        @media only screen and (max-width: 576px) {
+          .modal.account-modal .modal-content .modal-header h5 {
+            margin-left: 100px; } }
+        .modal.account-modal .modal-content .modal-header h5.create-account {
           margin-left: 115px; }
-    .modal .modal-content .modal-body {
+          @media only screen and (max-width: 576px) {
+            .modal.account-modal .modal-content .modal-header h5.create-account {
+              margin-left: 50px; } }
+      .modal.account-modal .modal-content .modal-header .forgot-title {
+        margin-left: 130px; }
+    .modal.account-modal .modal-content .modal-body {
       padding: 20px 20%; }
-      .modal .modal-content .modal-body form .form-imput-item {
+      .modal.account-modal .modal-content .modal-body form .form-imput-item {
         margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         font-size: 17px;
         border-bottom: 1px solid #000 !important; }
-        .modal .modal-content .modal-body form .form-imput-item input {
+        .modal.account-modal .modal-content .modal-body form .form-imput-item input {
           border: none;
           outline: none; }
-      .modal .modal-content .modal-body form .form-remember-me {
+      .modal.account-modal .modal-content .modal-body form .form-remember-me {
         text-align: left;
         margin-bottom: 20px; }
-        .modal .modal-content .modal-body form .form-remember-me label {
+        .modal.account-modal .modal-content .modal-body form .form-remember-me label {
           display: flex;
           align-items: center;
           cursor: pointer;
           font-size: 15px; }
-          .modal .modal-content .modal-body form .form-remember-me label input {
+          .modal.account-modal .modal-content .modal-body form .form-remember-me label input {
             min-width: 16px;
             height: 16px;
             margin: -3px 10px 0 0 !important;
             cursor: pointer; }
-      .modal .modal-content .modal-body form button {
+      .modal.account-modal .modal-content .modal-body form button {
         font-weight: 600;
         border-radius: 30px;
         background-color: #0f9675;
@@ -328,23 +337,24 @@ footer {
         border: 0;
         letter-spacing: 0.1em;
         transition: 0.3s all; }
-        .modal .modal-content .modal-body form button:hover {
+        .modal.account-modal .modal-content .modal-body form button:hover {
           background-color: #000; }
-      .modal .modal-content .modal-body form .forgot-password {
+      .modal.account-modal .modal-content .modal-body form .forgot-password {
         display: block;
         margin-top: 8px;
-        font-size: 14px;
-        color: #000; }
-    .modal .modal-content .modal-footer {
+        font-size: 13px;
+        color: #000;
+        cursor: pointer; }
+    .modal.account-modal .modal-content .modal-footer {
       border: none;
       display: flex;
       justify-content: center;
       padding: 20px 10px; }
-      .modal .modal-content .modal-footer p {
+      .modal.account-modal .modal-content .modal-footer p {
         margin-right: 20px;
         font-size: 14px;
         line-height: 18px; }
-      .modal .modal-content .modal-footer a {
+      .modal.account-modal .modal-content .modal-footer a {
         border-radius: 30px;
         font-weight: 600;
         color: #ffffff;
@@ -357,5 +367,110 @@ footer {
         text-align: center;
         transition: 0.3s all;
         cursor: pointer; }
-        .modal .modal-content .modal-footer a:hover {
+        .modal.account-modal .modal-content .modal-footer a:hover {
           background-color: #000; }
+
+.modal.basket-modal .modal-dialog {
+  max-width: 650px; }
+  @media only screen and (max-width: 768px) {
+    .modal.basket-modal .modal-dialog .container {
+      min-width: 100%; } }
+  .modal.basket-modal .modal-dialog .modal-header {
+    border-bottom: 0; }
+    .modal.basket-modal .modal-dialog .modal-header .modal-title {
+      font-size: 30px;
+      font-weight: 700; }
+  .modal.basket-modal .modal-dialog .modal-body .modal-basket-count {
+    margin-bottom: 35px;
+    margin-top: -12px;
+    font-weight: 500; }
+  .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-img {
+    width: 76px;
+    height: 76px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; }
+    .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-img img {
+      width: 100%; }
+  .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-prd-name {
+    display: inline-block; }
+    .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-prd-name p {
+      font-size: 18px;
+      font-weight: 700; }
+      @media only screen and (max-width: 768px) {
+        .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-prd-name p {
+          font-size: 16px; } }
+    .modal.basket-modal .modal-dialog .modal-body .basket-left .basket-prd-name span {
+      font-family: Arial, sans-serif;
+      font-size: 13px; }
+  .modal.basket-modal .modal-dialog .modal-body .basket-right {
+    display: flex;
+    justify-content: space-between; }
+    .modal.basket-modal .modal-dialog .modal-body .basket-right .basket-prd-count {
+      display: inline-block;
+      font-size: 0; }
+      .modal.basket-modal .modal-dialog .modal-body .basket-right .basket-prd-count .count-box {
+        display: inline-block;
+        line-height: 29px;
+        height: 29px;
+        text-align: center;
+        vertical-align: top; }
+        .modal.basket-modal .modal-dialog .modal-body .basket-right .basket-prd-count .count-box.minus {
+          background-color: grey;
+          border-radius: 3px 0 0 3px;
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer;
+          width: 29px; }
+        .modal.basket-modal .modal-dialog .modal-body .basket-right .basket-prd-count .count-box.count-value {
+          background: #f1f1f1;
+          width: 37px;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          color: #282828; }
+        .modal.basket-modal .modal-dialog .modal-body .basket-right .basket-prd-count .count-box.plus {
+          border-radius: 0 3px 3px 0;
+          background: #0f9675;
+          width: 29px;
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer; }
+    .modal.basket-modal .modal-dialog .modal-body .basket-right .prd-total-amount {
+      display: inline-block; }
+      .modal.basket-modal .modal-dialog .modal-body .basket-right .prd-total-amount span {
+        font-weight: 700;
+        font-size: 22px;
+        color: #171717;
+        line-height: 24px; }
+      .modal.basket-modal .modal-dialog .modal-body .basket-right .prd-total-amount i {
+        font-size: 20px;
+        color: #7b7b7b;
+        cursor: pointer; }
+  .modal.basket-modal .modal-dialog .modal-footer {
+    border: none; }
+    .modal.basket-modal .modal-dialog .modal-footer a {
+      width: 268px;
+      padding: 0px;
+      background: #AD0F14;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      transition: all, .3s;
+      line-height: 39px;
+      border-radius: 4px;
+      color: #fff; }
+      .modal.basket-modal .modal-dialog .modal-footer a:hover {
+        background-color: #000; }
+    .modal.basket-modal .modal-dialog .modal-footer .total-amount {
+      text-align: right; }
+      @media only screen and (max-width: 768px) {
+        .modal.basket-modal .modal-dialog .modal-footer .total-amount {
+          text-align: left; } }
+      .modal.basket-modal .modal-dialog .modal-footer .total-amount p, .modal.basket-modal .modal-dialog .modal-footer .total-amount span {
+        font-weight: 700;
+        font-size: 22px;
+        color: #171717;
+        line-height: 25px;
+        display: inline-block;
+        vertical-align: top; }

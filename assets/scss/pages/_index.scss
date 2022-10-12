@@ -4,24 +4,22 @@ header {
     padding: 8px 40px 16px;
     align-items: center;
     @media only screen and (max-width: 576px) {
-      &{
+      & {
         padding: 8px 20px 16px;
-
       }
     }
     .logo {
       width: 50%;
       @media only screen and (max-width: 768px) {
-        &{
+        & {
           width: 75%;
         }
       }
       @media only screen and (max-width: 576px) {
-        &{
+        & {
           width: 100%;
         }
       }
-    
     }
 
     .header-right {
@@ -34,34 +32,30 @@ header {
         font-weight: 700;
       }
 
-      .sign{
+      .sign {
         color: #000000;
         font-size: 22px;
         line-height: 24px;
         font-weight: 700;
-        .mobile-menu-tab-items{
+        .mobile-menu-tab-items {
           margin-top: 30px;
-          .mobile-menu-tab-body{
+          .mobile-menu-tab-body {
             background-color: #960000;
-            .option{
+            .option {
               background-color: #960000;
-              transition: .3s;
-              &:hover{
+              transition: 0.3s;
+              &:hover {
                 background-color: #960000;
-                opacity: .5;
-
+                opacity: 0.5;
               }
-
             }
-            a{
+            a {
               color: #fff;
             }
           }
         }
-        
       }
 
-      
       .select-menu .select-btn {
         cursor: pointer;
       }
@@ -79,7 +73,6 @@ header {
         animation-fill-mode: both;
         -webkit-animation-duration: 0.35s;
         -webkit-animation-fill-mode: both;
-       
       }
       .select-menu .options .option {
         display: flex;
@@ -137,7 +130,6 @@ header {
           opacity: 0;
         }
       }
-     
 
       .mobile-menu {
         .hamburger-menu {
@@ -145,7 +137,7 @@ header {
           color: #0f9675;
           cursor: pointer;
         }
-        .offcanvas{
+        .offcanvas {
           overflow-y: scroll;
           height: 100vh;
           .offcanvas-header {
@@ -160,12 +152,11 @@ header {
             }
           }
         }
-        
-        
       }
 
       .basket {
         margin-right: 30px;
+        text-align: center;
         i {
           position: relative;
           font-size: 23px;
@@ -212,7 +203,7 @@ header {
             opacity: 0.5;
           }
           @media only screen and (max-width: 992px) {
-            &{
+            & {
               font-size: 20px;
             }
           }
@@ -228,7 +219,7 @@ header {
   margin-bottom: 25px;
   overflow-x: hidden;
   @media only screen and (max-width: 576px) {
-    &{
+    & {
       max-width: 100%;
       margin-bottom: 16px;
     }
@@ -254,12 +245,12 @@ footer {
   background: #ad0f14;
   padding: 30px 30px 20px;
   @media only screen and (max-width: 992px) {
-    &{
+    & {
       padding: 20px 10px 0px;
     }
   }
   @media only screen and (max-width: 576px) {
-    &{
+    & {
       padding: 5px 10px 0px;
     }
   }
@@ -268,25 +259,25 @@ footer {
     justify-content: space-evenly;
     padding: 0;
     @media only screen and (max-width: 992px) {
-      &{
+      & {
         justify-content: space-around;
         margin-bottom: 40px;
       }
     }
     @media only screen and (max-width: 576px) {
-      &{
+      & {
         display: block;
         margin-bottom: 10px;
       }
     }
-    
+
     li {
       @media only screen and (max-width: 576px) {
-        &{
+        & {
           display: inline-block;
           width: 32%;
           margin-bottom: 10px;
-          &:last-child{
+          &:last-child {
             width: 60%;
           }
         }
@@ -299,15 +290,13 @@ footer {
         color: #ffffff;
         transition: all, 0.3s;
         @media only screen and (max-width: 992px) {
-          &{
+          & {
             font-size: 20px;
-
           }
         }
         @media only screen and (max-width: 576px) {
-          &{
+          & {
             font-size: 14px;
-
           }
         }
 
@@ -326,19 +315,19 @@ footer {
       top: -16px;
       width: 100%;
       @media only screen and (max-width: 992px) {
-        &{
+        & {
           position: relative;
           padding-left: 35px;
         }
       }
       @media only screen and (max-width: 768px) {
-        &{
+        & {
           position: relative;
           padding-left: 16px;
         }
       }
       @media only screen and (max-width: 576px) {
-        &{
+        & {
           padding-left: 5px;
           top: 0;
         }
@@ -350,9 +339,8 @@ footer {
     display: flex;
     justify-content: space-between;
     @media only screen and (max-width: 992px) {
-      &{
+      & {
         justify-content: space-evenly;
-
       }
     }
     li {
@@ -371,107 +359,264 @@ footer {
   }
 }
 
-.modal {
+.modal.account-modal {
   text-align: center;
   color: #000 !important;
   & .modal-content {
-      border-radius: 25px !important;
-      & .modal-header {
-          padding-top: 30px !important ;
-          padding-bottom: 30px !important;
-          border-bottom: 0;
-          & h5 {
-              font-size: 26px;
-              font-weight: 600;
-              line-height: 1.2;
-              text-transform: capitalize;
-              margin-left: 180px;
-              &.create-account {
-                  margin-left: 115px;
-              }
+    border-radius: 25px !important;
+    & .modal-header {
+      padding-top: 30px !important ;
+      padding-bottom: 30px !important;
+      border-bottom: 0;
+      & h5 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-transform: capitalize;
+        margin-left: 180px;
+        @media only screen and (max-width: 576px) {
+          &{
+            margin-left: 100px;
           }
-      }
-      & .modal-body {
-          padding: 20px 20%;
-          & form {
-              & .form-imput-item {
-                  margin-bottom: 30px;
-                  display: flex;
-                  justify-content: space-between;
-                  font-size: 17px;
-                  border-bottom: 1px solid #000 !important;
-                  & input {
-                      border: none;
-                      outline: none;
-                  }
-              }
-              & .form-remember-me {
-                  text-align: left;
-                  margin-bottom: 20px;
-                  & label {
-                      display: flex;
-                      align-items: center;
-                      cursor: pointer;
-                      font-size: 15px;
-                      & input {
-                          min-width: 16px;
-                          height: 16px;
-                          margin: -3px 10px 0 0 !important;
-                          cursor: pointer;
-                      }
-                  }
-              }
-              & button {
-                  font-weight: 600;
-                  border-radius: 30px;
-                  background-color: #0f9675;
-                  width: 100%;
-                  color: #fff;
-                  font-size: 14px;
-                  line-height: 1;
-                  padding: 16px;
-                  border: 0;
-                  letter-spacing: 0.1em;
-                  transition: 0.3s all;
-                  &:hover {
-                      background-color: #000;
-                  }
-              }
-              & .forgot-password {
-                  display: block;
-                  margin-top: 8px;
-                  font-size: 14px;
-                  color: #000;
-              }
+        }
+        &.create-account {
+          margin-left: 115px;
+          @media only screen and (max-width: 576px) {
+            &{
+              margin-left: 50px;
+            }
           }
+        }
       }
-      & .modal-footer {
-          border: none;
+      .forgot-title {
+        margin-left: 130px;
+      }
+    }
+    & .modal-body {
+      padding: 20px 20%;
+      & form {
+        & .form-imput-item {
+          margin-bottom: 30px;
           display: flex;
-          justify-content: center;
-          padding: 20px 10px;
-          & p {
-              margin-right: 20px;
-              font-size: 14px;
-              line-height: 18px;
+          justify-content: space-between;
+          font-size: 17px;
+          border-bottom: 1px solid #000 !important;
+          & input {
+            border: none;
+            outline: none;
           }
-          & a {
-              border-radius: 30px;
-              font-weight: 600;
-              color: #ffffff;
-              background-color: #ad0f14;
-              display: inline-block;
-              font-size: 14px;
-              line-height: 20px;
-              border: 0;
-              padding: 12px 30px;
-              text-align: center;
-              transition: 0.3s all;
+        }
+        & .form-remember-me {
+          text-align: left;
+          margin-bottom: 20px;
+          & label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 15px;
+            & input {
+              min-width: 16px;
+              height: 16px;
+              margin: -3px 10px 0 0 !important;
               cursor: pointer;
-              &:hover {
-                  background-color: #000;
-              }
+            }
           }
+        }
+        & button {
+          font-weight: 600;
+          border-radius: 30px;
+          background-color: #0f9675;
+          width: 100%;
+          color: #fff;
+          font-size: 14px;
+          line-height: 1;
+          padding: 16px;
+          border: 0;
+          letter-spacing: 0.1em;
+          transition: 0.3s all;
+          &:hover {
+            background-color: #000;
+          }
+        }
+        & .forgot-password {
+          display: block;
+          margin-top: 8px;
+          font-size: 13px;
+          color: #000;
+          cursor: pointer;
+        }
       }
+    }
+    & .modal-footer {
+      border: none;
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px;
+      & p {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      & a {
+        border-radius: 30px;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #ad0f14;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        border: 0;
+        padding: 12px 30px;
+        text-align: center;
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+.modal.basket-modal {
+  .modal-dialog {
+    max-width: 650px;
+    @media only screen and (max-width: 768px) {
+      & .container{
+        min-width: 100%;
+      }
+    }
+    .modal-header {
+      border-bottom: 0;
+      .modal-title {
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+    .modal-body {
+      .modal-basket-count {
+        margin-bottom: 35px;
+        margin-top: -12px;
+        font-weight: 500;
+      }
+      .basket-left{
+        .basket-img {
+          width: 76px;
+          height: 76px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 15px;
+          img {
+            width: 100%;
+          }
+        }
+        .basket-prd-name {
+          display: inline-block;
+          p {
+            font-size: 18px;
+            font-weight: 700;
+            @media only screen and (max-width: 768px) {
+              &{
+                font-size: 16px;
+              }
+            }
+          }
+          span {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+          }
+        }
+      }
+      
+      .basket-right{
+        display: flex;
+        justify-content: space-between;
+        .basket-prd-count {
+          display: inline-block;
+          font-size: 0;
+          .count-box {
+            display: inline-block;
+            line-height: 29px;
+            height: 29px;
+            text-align: center;
+            vertical-align: top;
+            &.minus {
+              background-color: grey;
+              border-radius: 3px 0 0 3px;
+              font-size: 20px;
+              color: #ffffff;
+              cursor: pointer;
+              width: 29px;
+            }
+            &.count-value {
+              background: #f1f1f1;
+              width: 37px;
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              color: #282828;
+            }
+            &.plus {
+              border-radius: 0 3px 3px 0;
+              background: #0f9675;
+              width: 29px;
+              font-size: 20px;
+              color: #ffffff;
+              cursor: pointer;
+            }
+          }
+        }
+        .prd-total-amount {
+          display: inline-block;
+          span {
+            font-weight: 700;
+            font-size: 22px;
+            color: #171717;
+            line-height: 24px;
+          }
+          i {
+            font-size: 20px;
+            color: #7b7b7b;
+            cursor: pointer;
+          }
+        }
+      }
+      
+      
+    }
+    .modal-footer {
+      border: none;
+      a{
+        width: 268px;
+        padding: 0px;
+        background: #AD0F14;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        transition: all, .3s;
+        line-height: 39px;
+        border-radius: 4px;
+        color: #fff;
+        &:hover {
+          background-color: #000;
+        }
+      }
+      .total-amount{
+        text-align: right;
+        @media only screen and (max-width: 768px) {
+          &{
+            text-align: left;
+          }
+        }
+        p,span{
+          font-weight: 700;
+          font-size: 22px;
+          color: #171717;
+          line-height: 25px;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
   }
 }
