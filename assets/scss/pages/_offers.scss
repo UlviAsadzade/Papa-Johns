@@ -1,0 +1,55 @@
+.offers-section {
+    h1 {
+        padding-bottom: 40px;
+        font-weight: 700;
+        font-size: 42px;
+        color: #000000;
+        line-height: 45px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 768px) {
+            & {
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .offers-box {
+        margin-bottom: 60px;
+        .offers-img {
+            img {
+                width: 100%;
+                margin-bottom: 50px;
+                @media only screen and (max-width: 768px) {
+                    & {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .offers-button {
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            transition: all, 0.3s;
+            line-height: 39px;
+            border-radius: 4px;
+            padding: 0 21px;
+            background: #0f9675;
+            color: #fff;
+            &:hover {
+                background-color: #ad0f14;
+            }
+            @media only screen and (max-width: 768px) {
+                & {
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+    

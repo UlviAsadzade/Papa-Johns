@@ -34,7 +34,10 @@
                                 <i class="fas fa-shopping-basket">
                                     <span class="basket-count">2</span>
                                 </i>
-                                <div class="basket-price">13.90 ₼</div>
+                                <div class="basket-price">
+                                    <span>13.90</span>
+                                    <span>₼</span>
+                                </div>
                             </a>
                         </div>
                         <div class="sign d-none d-md-block ">
@@ -79,8 +82,8 @@
                                         <!-- <a href="">Ulvi Asadzade</a>
                                         <a href="">/ Çıxış</a> -->
 
-                                        <a  data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a>
-                                        <a  data-bs-toggle="modal" data-bs-target="#registerModal">/ Sign Up</a>
+                                        <a data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a>
+                                        <a data-bs-toggle="modal" data-bs-target="#registerModal">/ Sign Up</a>
                                     </div>
 
                                     <div class="sign  ">
@@ -91,15 +94,15 @@
                                             </div>
 
                                             <ul class="options mobile-menu-tab-body">
-                                                <li class="option"><a class="option-text" href="">OFFERS</a></li>
-                                                <li class="option"><a class="option-text" href="">PAPADIAS</a></li>
-                                                <li class="option"><a class="option-text" href="">PIZZA</a></li>
-                                                <li class="option"><a class="option-text" href="">SNACKES</a></li>
-                                                <li class="option"><a class="option-text" href="">SALADS</a></li>
-                                                <li class="option"><a class="option-text" href="">PASTA</a></li>
-                                                <li class="option"><a class="option-text" href="">DRINKS</a></li>
-                                                <li class="option"><a class="option-text" href="">DESSERT</a></li>
-                                                <li class="option"><a class="option-text" href="">SAUCES</a></li>
+                                                <li class="option"><a class="option-text" href="./offers.html">OFFERS</a></li>
+                                                <li class="option"><a class="option-text" href="./papadias.html">PAPADIAS</a></li>
+                                                <li class="option"><a class="option-text" href="./pizza.html">PIZZA</a></li>
+                                                <li class="option"><a class="option-text" href="./snackes.html">SNACKES</a></li>
+                                                <li class="option"><a class="option-text" href="./salads.html">SALADS</a></li>
+                                                <li class="option"><a class="option-text" href="./pasta.html">PASTA</a></li>
+                                                <li class="option"><a class="option-text" href="./drinks.html">DRINKS</a></li>
+                                                <li class="option"><a class="option-text" href="./dessert.html">DESSERT</a></li>
+                                                <li class="option"><a class="option-text" href="./sauces.html">SAUCES</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -112,18 +115,21 @@
             </div>
             <div class="row header-bottom d-none d-md-block">
                 <ul>
-                    <li><a href="">OFFERS</a></li>
-                    <li><a href="">PAPADIAS</a></li>
-                    <li><a href="">PIZZA</a></li>
-                    <li><a href="">SNACKES</a></li>
-                    <li><a href="">SALADS</a></li>
-                    <li><a href="">PASTA</a></li>
-                    <li><a href="">DRINKS</a></li>
-                    <li><a href="">DESSERT</a></li>
-                    <li><a href="">SAUCES</a></li>
+                    <li><a href="./offers.html">OFFERS</a></li>
+                    <li><a href="./papadias.html">PAPADIAS</a></li>
+                    <li><a href="./pizza.html">PIZZA</a></li>
+                    <li><a href="./snackes.html">SNACKES</a></li>
+                    <li><a href="./salads.html">SALADS</a></li>
+                    <li><a href="./pasta.html">PASTA</a></li>
+                    <li><a href="./drinks.html">DRINKS</a></li>
+                    <li><a href="./dessert.html">DESSERT</a></li>
+                    <li><a href="./sauces.html">SAUCES</a></li>
                 </ul>
             </div>
     </header>
+
+    <section class="top-bar d-md-none"></section>
+
 
     <section class="slider">
         <div class="container-fluid">
@@ -216,11 +222,11 @@
             <div class="row">
                 <div class="col-lg-7 col-12">
                     <ul class="footer-list">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Career</a></li>
-                        <li><a href="">Dough</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Dough</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-6 footer-img">
@@ -253,7 +259,8 @@
 
 
     <!-- Modal for Login start -->
-    <div class="modal fade  account-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal fade  account-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -277,7 +284,8 @@
                             </label>
                         </div>
                         <button type="submit">SIGN IN</button>
-                        <a data-bs-toggle="modal" data-bs-target="#forgotModal" class="forgot-password">Forgot your password?</a>
+                        <a data-bs-toggle="modal" data-bs-target="#forgotModal" class="forgot-password">Forgot your
+                            password?</a>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -291,7 +299,8 @@
 
 
     <!-- Modal for Register start -->
-    <div class="modal fade account-modal" id="registerModal" tabindex="-1" aria-labelledby="registerModallLabel" aria-hidden="true">
+    <div class="modal fade account-modal" id="registerModal" tabindex="-1" aria-labelledby="registerModallLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -320,7 +329,7 @@
                 </div>
                 <div class="modal-footer">
                     <p>Already a member?</p>
-                    <a data-bs-toggle="modal" data-bs-target="#loginModal" >SIGN IN</a>
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal">SIGN IN</a>
                 </div>
             </div>
         </div>
@@ -330,7 +339,8 @@
 
 
     <!-- Modal for Forgot Password start -->
-    <div class="modal fade account-modal" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel" aria-hidden="true">
+    <div class="modal fade account-modal" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -343,7 +353,7 @@
                             <input type="email" placeholder="Email">
                             <i class="fa fa-envelope"></i>
                         </div>
-                        
+
                         <button type="submit">SEND MY PASSWORD</button>
                     </form>
                 </div>
@@ -359,7 +369,8 @@
 
 
     <!-- Modal for Basket start -->
-    <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
+    <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content ">
                 <div class="modal-header">
@@ -367,15 +378,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
                     <div class="container">
                         <div class="modal-basket-count">
-                            Items in your basket:  <strong>2</strong>
+                            Items in your basket: <strong>2</strong>
                         </div>
-                        <div class="row my-4">
+                        <div class="row basket-items">
                             <div class="col-12 col-sm-7 basket-left">
                                 <div class="basket-img">
-                                    <img src="https://www.papajohns.az/uploads/images/pizza/Grill-%C3%87iken-Parmezan.png" alt="">
+                                    <img src="https://www.papajohns.az/uploads/images/pizza/Grill-%C3%87iken-Parmezan.png"
+                                        alt="">
                                 </div>
                                 <div class="basket-prd-name">
                                     <p>Grill Chicken Parmesan</p>
@@ -393,15 +404,17 @@
                                     </div>
                                 </div>
                                 <div class="prd-total-amount">
-                                    <span>4.9 ₼</span>
-                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    <span class="prd-price">4.90</span>
+                                    <span>₼</span>
+                                    <i class="fa fa-times remove-prd" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="row my-4">
+                        <div class="row basket-items">
                             <div class="col-12 col-sm-7 basket-left">
                                 <div class="basket-img">
-                                    <img src="https://www.papajohns.az/uploads/images/pizza/vegetarian-acili.png" alt="">
+                                    <img src="https://www.papajohns.az/uploads/images/pizza/vegetarian-acili.png"
+                                        alt="">
                                 </div>
                                 <div class="basket-prd-name">
                                     <p>Spicy Garden Special</p>
@@ -419,37 +432,36 @@
                                     </div>
                                 </div>
                                 <div class="prd-total-amount">
-                                    <span>9 ₼</span>
-                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    <span class="prd-price">9.00</span>
+                                    <span>₼</span>
+                                    <i class="fa fa-times remove-prd" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 d-block d-sm-none">
-                                <div class="total-amount">
-                                    <p>Total Amount:</p>
-                                    <span>13.9 ₼</span>
-                                </div>
-
+                        <div class="row mt-4 mt-sm-0 position-relative">
+                            <div class="col-12 col-sm-6 go-checkout">
+                                <a class="" href="./checkout.html">CHECKOUT</a>
+                            </div>
+                            <div class="col-12 col-sm-6 go-shop">
+                                <a href="./pizza.html">BACK TO SHOP</a>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <a href="./checkout.html">CHECKOUT</a>
-                            </div>
-                            <div class="col-12 col-sm-6 d-none d-sm-block">
                                 <div class="total-amount">
                                     <p>Total Amount:</p>
-                                    <span>13.9 ₼</span>
+                                    <span class="total-price">13.90</span>
+                                    <span>₼</span>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
