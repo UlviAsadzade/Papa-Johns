@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="194x194"
+        href="https://www.papajohns.az/img/content/favicon/favicon-194x194.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Papa John's</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row header-top">
+                <div class="col-6">
+                    <a href="./index.html">
+                        <img class="logo" src="./assets/images/pj_logo_web_new.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <div class="header-right">
+                        <div class="basket">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#basketModal">
+                                <i class="fas fa-shopping-basket">
+                                    <span class="basket-count">2</span>
+                                </i>
+                                <div class="basket-price">
+                                    <span>13.90</span>
+                                    <span>₼</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sign d-none d-md-block ">
+                            <!-- <div class="select-menu">
+                                <div class="select-btn">
+                                    <i class="fa fa-user"></i>
+                                    <span class="sBtn-text">Ulvi Asadzade</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+
+                                <ul class="options">
+                                    <li class="option">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                        <a class="option-text">Profiliniz</a>
+                                    </li>
+                                    <li class="option">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        <a class="option-text">Çıxış</a>
+                                    </li>
+
+                                </ul>
+                            </div> -->
+                            <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#registerModal">/ Sign Up</a>
+                        </div>
+                        <div class="mobile-menu d-block d-md-none  ">
+                            <div class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="fa fa-bars"></i>
+                            </div>
+
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+                                    <div class="sign mobile-menu-account">
+                                        <!-- <a href="">Ulvi Asadzade</a>
+                                        <a href="">/ Çıxış</a> -->
+
+                                        <a data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a>
+                                        <a data-bs-toggle="modal" data-bs-target="#registerModal">/ Sign Up</a>
+                                    </div>
+
+                                    <div class="sign  ">
+                                        <div class="select-menu mobile-menu-tab-items">
+                                            <div class="select-btn">
+                                                <span class="sBtn-text">MENU</span>
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+
+                                            <ul class="options mobile-menu-tab-body">
+                                                <li class="option"><a class="option-text" href="./offers.html">OFFERS</a></li>
+                                                <li class="option"><a class="option-text" href="./papadias.html">PAPADIAS</a></li>
+                                                <li class="option"><a class="option-text" href="./pizza.html">PIZZA</a></li>
+                                                <li class="option"><a class="option-text" href="./snackes.html">SNACKES</a></li>
+                                                <li class="option"><a class="option-text" href="./salads.html">SALADS</a></li>
+                                                <li class="option"><a class="option-text" href="./pasta.html">PASTA</a></li>
+                                                <li class="option"><a class="option-text" href="./drinks.html">DRINKS</a></li>
+                                                <li class="option"><a class="option-text" href="./dessert.html">DESSERT</a></li>
+                                                <li class="option"><a class="option-text" href="./sauces.html">SAUCES</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row header-bottom d-none d-md-block">
+                <ul>
+                    <li><a href="./offers.html">OFFERS</a></li>
+                    <li><a href="./papadias.html">PAPADIAS</a></li>
+                    <li><a href="./pizza.html">PIZZA</a></li>
+                    <li><a href="./snackes.html">SNACKES</a></li>
+                    <li><a href="./salads.html">SALADS</a></li>
+                    <li><a href="./pasta.html">PASTA</a></li>
+                    <li><a href="./drinks.html">DRINKS</a></li>
+                    <li><a href="./dessert.html">DESSERT</a></li>
+                    <li><a href="./sauces.html">SAUCES</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <section class="top-bar d-md-none"></section>
+
+    <section class="sauces-section">
+        <div class="container-fluid px-4 px-sm-5">
+            <div class="row">
+                <h1>sauces</h1>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Ranch.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>Ranch Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Barbeque.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>BBQ Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Garlic.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>Garlic Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Buffalo.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>Buffalo Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Thousand-island.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>1000 Island Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="sauces-img" data-bs-toggle="modal" data-bs-target="#saucesModal">
+                        <img src="https://www.papajohns.az/uploads/images/Pizza.jpg" alt="">
+                    </div>
+                    <div class="sauces-title">
+                        <p>Pizza Sauce</p>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#saucesModal">select</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Dough</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 footer-img">
+                    <img src="./assets/images/footer.png" alt="">
+                </div>
+                <div class="col-lg-2 col-6">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/papajohns.az/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/azpapajohns">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/azpapajohns/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal for Login start -->
+    <div class="modal fade  account-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-imput-item">
+                            <input type="email" placeholder="Email">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="form-imput-item">
+                            <input type="password" placeholder="Password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="form-remember-me">
+                            <label for="">
+                                <input type="checkbox" name="" id="">
+                                Remember Me
+                            </label>
+                        </div>
+                        <button type="submit">SIGN IN</button>
+                        <a data-bs-toggle="modal" data-bs-target="#forgotModal" class="forgot-password">Forgot your
+                            password?</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Not a member?</p>
+                    <a data-bs-toggle="modal" data-bs-target="#registerModal">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Login finish -->
+
+
+    <!-- Modal for Register start -->
+    <div class="modal fade account-modal" id="registerModal" tabindex="-1" aria-labelledby="registerModallLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title create-account" id="registerModalLabel">Create An Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-imput-item">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-imput-item">
+                            <input type="text" placeholder="Your Surname">
+                        </div>
+                        <div class="form-imput-item">
+                            <input type="email" placeholder="Your email">
+                        </div>
+                        <div class="form-imput-item">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="form-imput-item">
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                        <button type="submit">SIGN UP</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Already a member?</p>
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal">SIGN IN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Register finish -->
+
+
+
+    <!-- Modal for Forgot Password start -->
+    <div class="modal fade account-modal" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title forgot-title" id="forgotModalLabel">Forgot Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-imput-item">
+                            <input type="email" placeholder="Email">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+
+                        <button type="submit">SEND MY PASSWORD</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Back to</p>
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal" class="show-login-modal">SIGN IN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Forgot Password finish -->
+
+
+
+    <!-- Modal for Basket start -->
+    <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="basketModalLabel">Your Basket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="modal-basket-count">
+                            Items in your basket: <strong>2</strong>
+                        </div>
+                        <div class="row basket-items">
+                            <div class="col-12 col-sm-7 basket-left">
+                                <div class="basket-img">
+                                    <img src="https://www.papajohns.az/uploads/images/pizza/Grill-%C3%87iken-Parmezan.png"
+                                        alt="">
+                                </div>
+                                <div class="basket-prd-name">
+                                    <p>Grill Chicken Parmesan</p>
+                                    <span>Mini pizza, 15 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-5 basket-right">
+                                <div class="basket-prd-count">
+                                    <div class="minus count-box">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="count-value count-box">1</span>
+                                    <div class="plus count-box">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="prd-total-amount">
+                                    <span class="prd-price">4.90</span>
+                                    <span>₼</span>
+                                    <i class="fa fa-times remove-prd" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row basket-items">
+                            <div class="col-12 col-sm-7 basket-left">
+                                <div class="basket-img">
+                                    <img src="https://www.papajohns.az/uploads/images/pizza/vegetarian-acili.png"
+                                        alt="">
+                                </div>
+                                <div class="basket-prd-name">
+                                    <p>Spicy Garden Special</p>
+                                    <span>Small, 23 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-5 basket-right">
+                                <div class="basket-prd-count">
+                                    <div class="minus count-box">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="count-value count-box">1</span>
+                                    <div class="plus count-box">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="prd-total-amount">
+                                    <span class="prd-price">9.00</span>
+                                    <span>₼</span>
+                                    <i class="fa fa-times remove-prd" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row mt-4 mt-sm-0 position-relative">
+                            <div class="col-12 col-sm-6 go-checkout">
+                                <a class="" href="./checkout.html">CHECKOUT</a>
+                            </div>
+                            <div class="col-12 col-sm-6 go-shop">
+                                <a href="./pizza.html">BACK TO SHOP</a>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="total-amount">
+                                    <p>Total Amount:</p>
+                                    <span class="total-price">13.90</span>
+                                    <span>₼</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Basket finish -->
+
+
+    <!-- Modal for Dessert start -->
+    <div class="modal fade sauces-modal " id="saucesModal" tabindex="-1" aria-labelledby="saucesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="modal-img">
+                            <img src="https://www.papajohns.az/uploads/images/Ranch.jpg" alt="">
+                        </div>
+                        <div class="modal-title">
+                            <p>Ranch Sauce</p>
+                        </div>
+                        <div class="modal-details">
+                            <div class="modal-prd-count">
+                                <div class="sauces-minus modal-count-box">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+                                <span class="modal-count-value modal-count-box">1</span>
+                                <div class="sauces-plus modal-count-box">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="modal-prd-price">
+                                <span>0.8</span>
+                                <span>₼</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-basket">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#basketModal">
+                            <i class="fas fa-shopping-basket">
+                                <span class="basket-count">2</span>
+                            </i>
+                            <div class="basket-price">
+                                <span>13.90</span>
+                                <span>₼</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="" class="modal-button">add</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Dessert finish -->
+
+
+
+
+    <script src="https://kit.fontawesome.com/b26885e958.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/sauces.js"></script>
+
+</body>
+
+</html>
