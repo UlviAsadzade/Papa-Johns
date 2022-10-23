@@ -1,0 +1,167 @@
+.drinks-section {
+    margin-bottom: 40px;
+    h1 {
+        font-weight: 700;
+        font-size: 42px;
+        color: #000000;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .drinks-img {
+        margin-bottom: 10px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            min-height: 220px;
+        }
+    }
+    .drinks-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 82px;
+        a {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all, 0.3s;
+            line-height: 39px;
+            border-radius: 4px;
+            padding: 0 16px;
+            background: #0f9675;
+            height: 39px;
+            &:hover {
+                background-color: #ad0f14;
+            }
+        }
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            color: #171717;
+            line-height: 25px;
+        }
+    }
+    
+}
+
+.modal.drinks-modal {
+    .modal-dialog {
+        .modal-content{
+            height: 530px;
+            width: 450px;
+            margin: 0 auto;
+        }
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-body {
+            .modal-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .modal-title {
+                font-weight: 700;
+                line-height: 44px;
+                font-size: 26px;
+                color: #000000;
+            }
+            .modal-details {
+                display: flex;
+                justify-content: space-between;
+                .modal-prd-count {
+                    display: inline-block;
+                    font-size: 0;
+                    .modal-count-box {
+                        display: inline-block;
+                        line-height: 29px;
+                        height: 29px;
+                        text-align: center;
+                        vertical-align: top;
+                        &.drinks-minus {
+                            background-color: grey;
+                            border-radius: 3px 0 0 3px;
+                            font-size: 20px;
+                            color: #ffffff;
+                            cursor: pointer;
+                            width: 29px;
+                        }
+                        &.modal-count-value {
+                            background: #f1f1f1;
+                            width: 37px;
+                            font-family: Arial, sans-serif;
+                            font-size: 16px;
+                            color: #282828;
+                        }
+                        &.drinks-plus {
+                            border-radius: 0 3px 3px 0;
+                            background: #0f9675;
+                            width: 29px;
+                            font-size: 20px;
+                            color: #ffffff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .modal-prd-price {
+                    font-weight: 700;
+                    line-height: 1;
+                    font-size: 32px;
+                    color: #000000;
+                }
+            }
+        }
+        .modal-footer {
+            border: none;
+            justify-content: space-between;
+            .modal-basket {
+                margin-right: 30px;
+                text-align: center;
+                a {
+                    color: #000000;
+                }
+                i {
+                    position: relative;
+                    font-size: 23px;
+                    .basket-count {
+                        position: absolute;
+                        top: -10px;
+                        right: -18px;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: 2px solid #ffffff;
+                        background: #ad0f14;
+                        color: #ffffff;
+                        font-family: "Helvetica Neue DeskInterface", sans-serif;
+                        font-size: 12px;
+                        line-height: 21px;
+                        text-align: center;
+                        z-index: 2;
+                        font-weight: 400;
+                    }
+                }
+                .basket-price {
+                    font-size: 16px;
+                }
+            }
+            .modal-button {
+                padding: 0 18px;
+                background: #0f9675;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                transition: all, 0.3s;
+                line-height: 36px;
+                border-radius: 4px;
+                &:hover{
+                    background-color: #ad0f14;
+                }
+            }
+        }
+    }
+}
