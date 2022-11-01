@@ -62,8 +62,8 @@ header {
       .select-menu .options {
         position: absolute;
         min-width: 200px;
-        padding: 10px;
-        margin-top: 10px;
+        padding: 0px;
+        margin-top: 5px;
         border-radius: 8px;
         background: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@ header {
       }
       .select-menu .options .option {
         display: flex;
-        height: 55px;
+        height: 45px;
         cursor: pointer;
         padding: 0 16px;
         border-radius: 8px;
