@@ -1723,3 +1723,73 @@ footer {
     border-radius: 4px; }
     .modal.sauces-modal .modal-dialog .modal-footer .modal-button:hover {
       background-color: #ad0f14; }
+
+.account-section {
+  margin-bottom: 40px; }
+  .account-section h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #000000;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  .account-section .nav-link {
+    color: black;
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 700; }
+    .account-section .nav-link.active {
+      color: #fff;
+      background-color: #ad0f14; }
+  .account-section .tab-content form .profile-titles {
+    font-weight: 700;
+    font-size: 22px;
+    color: #171717;
+    line-height: 25px; }
+  .account-section .tab-content form label {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px; }
+  .account-section .tab-content form input {
+    border: 1px solid #b8b8b8;
+    height: 39px;
+    line-height: 39px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+    padding: 0 10px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 25px; }
+  .account-section .tab-content form button {
+    background: #ad0f14;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: all, 0.3s;
+    line-height: 39px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    width: 40%; }
+    .account-section .tab-content form button:hover {
+      background-color: #0f9675; }
+  .account-section .tab-content .order-table {
+    overflow-x: auto; }
+    .account-section .tab-content .order-table table {
+      font-weight: 500; }
+      .account-section .tab-content .order-table table .table-icon {
+        color: #0f9675;
+        cursor: pointer;
+        font-size: 18px; }
+      .account-section .tab-content .order-table table .table-price {
+        color: #ad0f14;
+        font-weight: 700; }
+      .account-section .tab-content .order-table table .table-image {
+        width: 20%; }
+        .account-section .tab-content .order-table table .table-image img {
+          width: 100%; }

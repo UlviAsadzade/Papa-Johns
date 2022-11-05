@@ -1,0 +1,91 @@
+.account-section {
+    margin-bottom: 40px;
+    h1 {
+        font-weight: 700;
+        font-size: 42px;
+        color: #000000;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .nav-link {
+        color: black;
+        font-size: 23px;
+        line-height: 25px;
+        font-weight: 700;
+        &.active {
+            color: #fff;
+            background-color: #ad0f14;
+        }
+    }
+    .tab-content{
+        form {
+            .profile-titles {
+                font-weight: 700;
+                font-size: 22px;
+                color: #171717;
+                line-height: 25px;
+            }
+            label {
+                display: block;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+            input {
+                border: 1px solid #b8b8b8;
+                height: 39px;
+                line-height: 39px;
+                border-radius: 4px;
+                font-family: Arial, sans-serif;
+                font-weight: 100;
+                font-size: 15px;
+                color: black;
+                padding: 0 10px;
+                width: 100%;
+                outline: none;
+                margin-bottom: 25px;
+                
+            }
+            button {
+                background: #ad0f14;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                transition: all, 0.3s;
+                line-height: 39px;
+                border-radius: 4px;
+                outline: none;
+                border: none;
+                width: 40%;
+                &:hover{
+                    background-color: #0f9675;;
+                }
+            }
+        }
+        .order-table{
+            overflow-x: auto;
+            table{
+                font-weight: 500;
+                .table-icon{
+                    color: #0f9675;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+                .table-price{
+                    color: #ad0f14;
+                    font-weight: 700;
+                }
+                .table-image{
+                    width: 20%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
