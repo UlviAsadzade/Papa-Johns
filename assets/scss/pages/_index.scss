@@ -396,6 +396,11 @@ footer {
       }
       .forgot-title {
         margin-left: 130px;
+        @media only screen and (max-width: 576px) {
+          &{
+            margin-left: 50px;
+          }
+        }
       }
     }
     & .modal-body {

@@ -1,0 +1,239 @@
+.checkout-section {
+    margin-bottom: 60px;
+    h1 {
+        font-weight: 700;
+        font-size: 42px;
+        color: #000000;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        @media only screen and (max-width: 576px) {
+            & {
+                font-size: 30px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+
+    .checkout-left {
+        padding: 30px;
+        border: 2px solid #eaeaea;
+        background-color: #fff;
+        width: 49%;
+        border-radius: 10px;
+        @media only screen and (max-width: 992px) {
+            & {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            & {
+                width: 95%;
+                padding: 30px 10px;
+
+            }
+        }
+        h4 {
+            padding-bottom: 8px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            text-transform: uppercase;
+            border-color: #a8a3a3;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        #checkout-form {
+            label {
+                display: block;
+                font-size: 16px;
+                padding-bottom: 10px;
+                span {
+                    color: #e42234;
+                }
+            }
+            input {
+                border: 1px solid #b8b8b8;
+                height: 39px;
+                line-height: 39px;
+                border-radius: 4px;
+                font-weight: 100;
+                font-size: 15px;
+                color: black;
+                padding: 0 10px;
+                width: 100%;
+                outline: none;
+                margin-bottom: 25px;
+            }
+            textarea {
+                border: 1px solid #b8b8b8;
+                line-height: 39px;
+                border-radius: 4px;
+                font-weight: 100;
+                font-size: 15px;
+                color: black;
+                padding: 0 10px;
+                width: 100%;
+                height: 150px;
+                outline: none;
+            }
+        }
+    }
+    .checkout-right {
+        padding: 30px;
+        border: 2px solid #eaeaea;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 49%;
+        height: max-content;
+        text-align: center;
+        @media only screen and (max-width: 992px) {
+            & {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            & {
+                width: 95%;
+                padding: 30px 10px;
+            }
+        }
+        h4 {
+            padding-bottom: 8px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            text-transform: uppercase;
+            border-color: #a8a3a3;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding: 0;
+            max-height: 370px;
+            overflow-y: auto;
+            @media only screen and (max-width: 992px) {
+                & {
+                    max-height: max-content;
+                }
+            }
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-bottom: 1px solid #eaeaea;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                
+                img {
+                    border-radius: 50px;
+                    width: 100px;
+                    height: 100px;
+                    @media only screen and (max-width: 576px) {
+                        & {
+                           width: 75px;
+                           height: 75px;
+    
+                        }
+                    }
+                }
+                .product-name {
+                    min-width: 180px;
+                    @media only screen and (max-width: 576px) {
+                        & {
+                           min-width: 160px;
+                        }
+                    }
+                    p {
+                        font-weight: 700;
+                        margin-bottom: 6px;
+                        @media only screen and (max-width: 576px) {
+                            & {
+                               font-size: 14px;
+                            }
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .product-count {
+                    color: #0f9675;
+                    border: 1px solid #0f9675;
+                    padding: 5px;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    @media only screen and (max-width: 576px) {
+                        & {
+                           width: 20px;
+                           height: 20px;
+                           padding: 0;
+                           font-size: 16px;
+                        }
+                    }
+                }
+                .product-price {
+                    color: #ad0f14;
+                    font-weight: 700;
+                    @media only screen and (max-width: 576px) {
+                        & {
+                          
+                           font-size: 14px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .checkout-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button {
+                background-color: #ad0f14;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                transition: all, 0.3s;
+                border-radius: 4px;
+                outline: none;
+                border: none;
+                width: 170px;
+                height: 50px;
+                &:hover {
+                    background-color: #0f9675;
+                }
+                @media only screen and (max-width: 576px) {
+                    & {
+                        font-size: 16px;
+                        width: 130px;
+                    }
+                }
+            }
+            .line {
+                width: 3px;
+                background-color: #eaeaea;
+                height: 90px;
+            }
+            .order-details {
+                .order-detail-amount {
+                    display: flex;
+                    p {
+                        width: 100px;
+                        font-weight: 700;
+                        text-align: start;
+                    }
+                    .product-price {
+                        color: #ad0f14;
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

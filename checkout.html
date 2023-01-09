@@ -139,90 +139,128 @@
 
     <section class="top-bar d-md-none"></section>
 
-    <section class="drinks-section">
-        <div class="container-fluid px-4 px-sm-5">
-            <div class="row">
-                <h1>drinks</h1>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1cocacola.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Coca Cola 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                    
+    <section class="checkout-section">
+        <div class="container">
+            <h1>checkout</h1>
+            <div class="row justify-content-lg-between justify-content-center">
+                <div class=" checkout-left">
+                    <h4>SHIPPING DETAILS</h4>
+                    <form action="" id="checkout-form">
+                        <div class="row">
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    Name
+                                    <span>*</span>
+                                </label>
+                                <input type="text" name="" id="" placeholder="Name">
+                            </div>
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    Surname
+                                    <span>*</span>
+                                </label>
+                                <input type="text" name="" id="" placeholder="Surname">
+                            </div>
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    Email
+                                    <span>*</span>
+                                </label>
+                                <input type="email" name="" id="" placeholder="Email">
+                            </div>
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    Phone Number
+                                    <span>*</span>
+                                </label>
+                                <input type="phone" name="" id="" placeholder="Phone number">
+                            </div>
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    City
+                                    <span>*</span>
+                                </label>
+                                <input type="text" name="" id="" placeholder="City">
+                            </div>
+                            <div class="col-6 user-form-item">
+                                <label for="">
+                                    Adress
+                                    <span>*</span>
+                                </label>
+                                <input type="text" name="" id="" placeholder="Adress">
+                            </div>
+
+                        </div>
+                        <div class="order-notes user-form-item">
+                            <label for="">Order Notes</label>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Coca-cola-shekersiz.png" alt="">
+
+                <div class=" checkout-right">
+                    <h4>YOUR ORDER</h4>
+                    <ul>
+                        <li>
+                            <div class="product-image">
+                                <img  src="https://www.papajohns.az/uploads/images/pizza/Grill-%C3%87iken-Parmezan.png"
+                                    alt="">
+                            </div>
+                            <div class="product-name">
+                                <p>Grill Chicken Parmesan</p>
+                                <span>Mini pizza, 15 cm</span>
+                            </div>
+                            <div class="product-count">1</div>
+                            <div class="product-price">
+                                <span>4.90 ₼</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-image">
+                                <img  src="https://www.papajohns.az/uploads/images/pizza/vegetarian-acili.png"
+                                    alt="">
+                            </div>
+                            <div class="product-name">
+                                <p>Spicy Garden Special</p>
+                                <span>Small, 23 cm</span>
+                            </div>
+                            <div class="product-count">1</div>
+                            <div class="product-price">
+                                <span>9.00 ₼</span>
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    <div class="checkout-footer">
+                        <button type="submit" form="checkout-form">place order</button>
+                        <div class="line"></div>
+                        <div class="order-details">
+                            <div class="order-detail-amount">
+                                <p>Subtotal:</p>
+                                <span class="product-price">13.90 ₼</span>
+                            </div>
+                            <div class="order-detail-amount">
+                                <p>Shipping:</p>
+                                <span class="product-price">0.00 ₼</span>
+                            </div>
+                            <div class="order-detail-amount">
+                                <p>Total:</p>
+                                <span class="product-price">13.90 ₼</span>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="drinks-title">
-                        <p>Coca-Cola Zero 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                    
+
+
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Sprite.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Sprite 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                   
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Fanta.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Fanta 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/milla.jpg" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Ayran 200ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Bonaqua.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Still Water 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Bonaqua.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Sparkling Water 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <div class="drinks-img" data-bs-toggle="modal" data-bs-target="#drinksModal">
-                        <img src="https://www.papajohns.az/uploads/images/drinks/1Fusetea.png" alt="">
-                    </div>
-                    <div class="drinks-title">
-                        <p>Fuse Tea, 500ml</p>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#drinksModal">select</a>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
-    
+
 
     <footer>
         <div class="container-fluid">
@@ -445,7 +483,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -475,60 +513,6 @@
     <!-- Modal for Basket finish -->
 
 
-    <!-- Modal for Drinks start -->
-    <div class="modal fade drinks-modal " id="drinksModal" tabindex="-1" aria-labelledby="drinksModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="modal-img">
-                            <img src="https://www.papajohns.az/uploads/images/drinks/1cocacola.png" alt="">
-                        </div>
-                        <div class="modal-title">
-                            <p>Coca Cola 500ml</p>
-                        </div>
-                        <div class="modal-details">
-                            <div class="modal-prd-count">
-                                <div class="drinks-minus modal-count-box">
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                </div>
-                                <span class="modal-count-value modal-count-box">1</span>
-                                <div class="drinks-plus modal-count-box">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="modal-prd-price">
-                                <span>2</span>
-                                <span>₼</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="modal-basket">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#basketModal">
-                            <i class="fas fa-shopping-basket">
-                                <span class="basket-count">2</span>
-                            </i>
-                            <div class="basket-price">
-                                <span>13.90</span>
-                                <span>₼</span>
-                            </div>
-                        </a>
-                    </div>
-                    <a href="" class="modal-button">add</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Modal for Drinks finish -->
-
-
 
 
     <script src="https://kit.fontawesome.com/b26885e958.js" crossorigin="anonymous"></script>
@@ -538,8 +522,6 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/drinks.js"></script>
-
 </body>
 
 </html>
